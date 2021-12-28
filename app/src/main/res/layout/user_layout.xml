@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:background="@color/bleuClaire"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"/>
+<LinearLayout
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:background="@drawable/button"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:paddingTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_fileName="profile-animation.json"/>
+
+
+    <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:text=" Cless Matthaus"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginTop="1dp"
+            android:id="@+id/statu"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="10"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            android:textColor="@color/vert"
+            android:inputType="textPersonName"
+            android:text="Statut: en ligne" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_weight="1"
+    android:layout_marginTop="-50dp"
+        android:layout_marginLeft="90dp"
+        app:lottie_autoPlay="true"
+        app:lottie_fileName="grip.json"
+        app:lottie_loop="true" />
+
+    <TextView
+            android:layout_marginTop="5dp"
+            android:id="@+id/statu_desc"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/gris"
+            android:ems="10"
+            android:textStyle="bold"
+            android:inputType="textPersonName"
+            android:text="Rien n'est facile, Mais tout est possible !" />
+</LinearLayout>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="3dp"
+    android:layout_marginTop="177dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:background="@color/white"
+    android:id="@+id/view"/>
+    </RelativeLayout>
